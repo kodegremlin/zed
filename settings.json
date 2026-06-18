@@ -7,6 +7,9 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
+  "edit_predictions": {
+    "provider": "zed",
+  },
   "auto_update": true,
   "relative_line_numbers": "enabled",
   "soft_wrap": "editor_width",
@@ -18,19 +21,30 @@
   "icon_theme": {
     "mode": "light",
     "light": "Material Icon Theme",
-    "dark": "Material Icon Theme"
+    "dark": "Material Icon Theme",
   },
   "colorize_brackets": true,
   "collaboration_panel": {
+    "button": false,
     "default_width": 320.0,
   },
   "git_panel": {
     "default_width": 320.0,
   },
   "agent": {
-    "default_width": 340.0,
+    "flexible": false,
+    "dock": "left",
+    "default_profile": "ask",
+    "default_model": {
+      "effort": "high",
+      "provider": "deepseek",
+      "model": "deepseek-v4-flash",
+      "enable_thinking": true,
+    },
+    "default_width": 320.0,
   },
   "outline_panel": {
+    "button": false,
     "default_width": 320.0,
   },
   "cursor_blink": false,
@@ -71,6 +85,7 @@
   },
   "vertical_scroll_margin": 10.0,
   "terminal": {
+    "button": true,
     "scrollbar": {
       "show": "never",
     },
@@ -130,7 +145,7 @@
   "theme": {
     "mode": "system",
     "light": "One Light",
-    "dark": "Sonokai Custom"
+    "dark": "Sonokai Custom",
   },
   "gutter": {
     "min_line_number_digits": 0,
@@ -145,6 +160,11 @@
   "global_lsp_settings": {
     "semantic_token_rules": [
       {
+        "token_type": "operator",
+        "token_modifiers": ["controlFlow"],
+        "foreground_color": "#FF974Dff",
+      },
+      {
         "token_type": "builtinType",
         "style": ["type.builtin"],
       },
@@ -157,9 +177,8 @@
         "style": ["type.builtin"],
       },
       {
-        "token_type": "operator",
-        "token_modifiers": ["controlFlow"],
-        "style": ["keyword"],
+        "token_type": "property",
+        "foreground_color": "#E8E3DCff",
       },
     ],
   },

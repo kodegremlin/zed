@@ -101,6 +101,7 @@
       "space w j": "workspace::ActivatePaneDown",
       "space w h": "workspace::ActivatePaneLeft",
       "space w a": "pane::CloseAllItems",
+      "space w c": "pane::CloseActiveItem",
     },
   },
   // Inside Terminal
@@ -112,7 +113,7 @@
   },
   // Insert mode
   {
-    "context": "Editor && vim_mode == insert",
+    "context": "Editor && vim_mode == insert && !GitCommit",
     "bindings": {
       "k j": "vim::NormalBefore",
     },
@@ -151,14 +152,26 @@
   {
     "context": "Editor && VimControl && !VimWaiting && !menu",
     "bindings": {
-      "g a": "editor::ToggleCodeActions", // code actions (like <leader>ca in lazyvim)
       "g shift-r": "editor::FindAllReferences",
       "g r": "editor::Rename", // rename symbol
+      "g a": "editor::ToggleCodeActions", // available code actions
       "space d b": "editor::ToggleBreakpoint",
       "space c a": "editor::ToggleCodeActions",
       "space c r": "editor::Rename",
-      "space g b": "git::Blame", // git blame inline
+      "space c f": "editor::Format",
       "space x x": "diagnostics::Deploy", // open diagnostics list
+      // git shortcuts
+      "space g b": "git::Blame", // git blame inline
+      "space g a": "git::Add",
+      "space g s": "git::StageAll",
+      "space g u": "git::UnstageAll",
+      "space g c": "git::Commit",
+    },
+  },
+  {
+    "context": "Editor && VimControl && !menu && vim_mode == visual",
+    "bindings": {
+      "g s": "git::ToggleStaged",
     },
   },
   // ── Neovim Y = yank to end of line ──────────────────────────────────────
