@@ -123,6 +123,7 @@
     "context": "VimControl && !menu",
     "bindings": {
       "space f f": "file_finder::Toggle",
+      "space k": "editor::Hover",
     },
   },
   // Normal mode only
