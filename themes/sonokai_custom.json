@@ -214,7 +214,7 @@
                         "font_weight": null
                     },
                     "constant": {
-                        "color": "#B0A1FFff",
+                        "color": "#979DFFff",
                         "font_style": null,
                         "font_weight": null
                     },
@@ -254,7 +254,7 @@
                         "font_weight": null
                     },
                     "function.special": {
-                        "color": "#BCA8F7ff",
+                        "color": "#A1A6FFff",
                         "font_style": null,
                         "font_weight": null
                     },

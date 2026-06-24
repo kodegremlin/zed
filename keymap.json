@@ -49,12 +49,11 @@
     "context": "VimControl && !menu",
     "bindings": {
       "ctrl-p": "vim::ScrollUp",
-    },
-  },
-  {
-    "context": "VimControl && !menu",
-    "bindings": {
       "ctrl-n": "vim::ScrollDown",
+      "ctrl-j": "vim::SelectNext",
+      "ctrl-k": "vim::SelectPrevious",
+      "g l": "vim::EndOfLine",
+      "g h": "vim::StartOfLineDownward",
     },
   },
   // File panel (netrw)

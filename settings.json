@@ -13,7 +13,7 @@
   },
   "auto_update": true,
   "relative_line_numbers": "enabled",
-  "soft_wrap": "editor_width",
+  "soft_wrap": "none",
   "use_auto_surround": true,
   "use_autoclose": true,
   "document_folding_ranges": "off",
@@ -164,6 +164,21 @@
         "token_type": "operator",
         "token_modifiers": ["controlFlow"],
         "foreground_color": "#FF974Dff",
+      },
+      {
+        "token_type": "struct",
+        "token_modifiers": ["library", "defaultLibrary"],
+        "foreground_color": "#FF5A58ff",
+      },
+      {
+        "token_type": "variable",
+        "token_modifiers": ["callable"],
+        "style": ["function.method"],
+      },
+      {
+        "token_type": "property",
+        "token_modifiers": ["library"],
+        "style": ["number"],
       },
       {
         "token_type": "builtinType",
