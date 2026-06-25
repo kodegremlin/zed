@@ -186,7 +186,7 @@
       },
       {
         "token_type": "macro",
-        "style": ["function.special"],
+        "foreground_color": "#FF5A58ff",
       },
       {
         "token_type": "selfTypeKeyword",
