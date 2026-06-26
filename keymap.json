@@ -143,7 +143,18 @@
     "bindings": {
       "shift-h": "pane::ActivatePreviousItem",
       "shift-l": "pane::ActivateNextItem",
-      "space `": "pane::ActivateLastItem",
+      "space b l": "pane::SwapItemLeft",
+      "space b r": "pane::SwapItemRight",
+    },
+  },
+  {
+    "context": "vim_mode == normal && !menu && Pane",
+    "bindings": {
+      "space b 1": ["pane::ActivateItem", 0],
+      "space b 2": ["pane::ActivateItem", 1],
+      "space b 3": ["pane::ActivateItem", 2],
+      "space b 4": ["pane::ActivateItem", 3],
+      "space b 5": ["pane::ActivateItem", 4],
     },
   },
   // ── LSP / code actions (LazyVim g-prefixed) ─────────────────────────────
