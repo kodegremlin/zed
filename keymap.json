@@ -169,9 +169,10 @@
     },
   },
   {
-    "context": "Editor && VimControl && !menu && vim_mode == visual",
+    "context": "Editor && VimControl && !agent_diff && !AgentPanel",
     "bindings": {
-      "g s": "git::ToggleStaged",
+      "g y": "git::StageAndNext",
+      "g u": "git::UnstageAndNext",
     },
   },
   // ── Neovim Y = yank to end of line ──────────────────────────────────────
