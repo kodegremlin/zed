@@ -10,17 +10,17 @@
   "proxy": "",
   "title_bar": {
     "show_menus": true,
-    "show_branch_status_icon": true
+    "show_branch_status_icon": true,
   },
   "status_bar": {
-    "show_active_file": true
+    "show_active_file": true,
   },
   "scroll_beyond_last_line": "vertical_scroll_margin",
   "preview_tabs": {
     "enable_preview_file_from_code_navigation": false,
     "enable_preview_from_multibuffer": false,
     "enable_preview_from_project_panel": false,
-    "enabled": false
+    "enabled": false,
   },
   "diff_view_style": "unified",
   "edit_predictions": {
@@ -92,7 +92,7 @@
   "use_smartcase_search": true,
   "close_on_file_delete": true,
   "file_finder": {
-    "modal_max_width": "medium",
+    "modal_max_width": "small",
   },
   "preferred_line_length": 110,
   "scrollbar": {
