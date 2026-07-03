@@ -8,11 +8,6 @@
 [
   // General Ide keymaps
   {
-    "bindings": {
-      "alt-cmd-q": "workspace::CloseProject",
-    },
-  },
-  {
     "context": "Editor && VimControl && !menu",
     "bindings": {
       "space w q": "workspace::CloseProject",
@@ -37,11 +32,25 @@
       "q": "git_panel::Close",
     },
   },
-  // Registers
   {
-    "context": "Editor && VimControl && !menu",
+    "context": "ProjectSearchBar || VimControl && !menu",
     "bindings": {
-      "g \"": "vim::ToggleRegistersView",
+      "ctrl *": "search::ToggleRegex",
+      "ctrl shift-a": "search::ToggleCaseSensitive",
+      "ctrl shift-w": "search::ToggleWholeWord",
+    },
+  },
+  {
+    "context": "!ProjectSearchBar && VimControl && !menu",
+    "bindings": {
+      "n": "search::SelectNextMatch",
+      "shift-n": "search::SelectPreviousMatch",
+    },
+  },
+  {
+    "context": "Picker > Editor",
+    "bindings": {
+      "ctrl-shift-p": "picker::TogglePreview",
     },
   },
   // Popups and its behaviour
@@ -123,6 +132,8 @@
     "bindings": {
       "space f f": "file_finder::Toggle",
       "space k": "editor::Hover",
+      // "space /": "text_finder::Toggle",
+      "space /": "pane::DeploySearch",
     },
   },
   // Normal mode only
@@ -143,8 +154,8 @@
     "bindings": {
       "shift-h": "pane::ActivatePreviousItem",
       "shift-l": "pane::ActivateNextItem",
-      "space b l": "pane::SwapItemLeft",
-      "space b r": "pane::SwapItemRight",
+      "space b h": "pane::SwapItemLeft",
+      "space b l": "pane::SwapItemRight",
     },
   },
   {
@@ -166,6 +177,7 @@
       "g shift-r": "editor::FindAllReferences",
       "g r": "editor::Rename", // rename symbol
       "g a": "editor::ToggleCodeActions", // available code actions
+      "g m": "editor::ToggleFold",
       "space d b": "editor::ToggleBreakpoint",
       "space c a": "editor::ToggleCodeActions",
       "space c r": "editor::Rename",

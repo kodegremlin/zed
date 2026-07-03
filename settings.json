@@ -7,6 +7,21 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
+  "proxy": "",
+  "title_bar": {
+    "show_menus": true,
+    "show_branch_status_icon": true
+  },
+  "status_bar": {
+    "show_active_file": true
+  },
+  "scroll_beyond_last_line": "vertical_scroll_margin",
+  "preview_tabs": {
+    "enable_preview_file_from_code_navigation": false,
+    "enable_preview_from_multibuffer": false,
+    "enable_preview_from_project_panel": false,
+    "enabled": false
+  },
   "diff_view_style": "unified",
   "edit_predictions": {
     "provider": "zed",
@@ -60,6 +75,8 @@
     "diagnostic_badges": true,
   },
   "tabs": {
+    "file_icons": false,
+    "git_status": true,
     "show_diagnostics": "all",
   },
   "toolbar": {
@@ -75,7 +92,7 @@
   "use_smartcase_search": true,
   "close_on_file_delete": true,
   "file_finder": {
-    "modal_max_width": null,
+    "modal_max_width": "medium",
   },
   "preferred_line_length": 110,
   "scrollbar": {
@@ -178,7 +195,7 @@
       {
         "token_type": "variable",
         "token_modifiers": ["callable"],
-        "style": ["function.method"],
+        "style": ["function"],
       },
       {
         "token_type": "property",
