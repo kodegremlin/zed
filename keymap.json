@@ -101,7 +101,8 @@
     "context": "EmptyPane || SharedScreen",
     "bindings": {
       "space space": "file_finder::Toggle",
-      "space E": "project_panel::Toggle",
+      "space /": "text_finder::Toggle",
+      "space e": "project_panel::Toggle",
       "space f n": "workspace::NewFile",
       "space f p": "projects::OpenRecent",
       "space s g": "workspace::NewSearch",
@@ -147,8 +148,8 @@
     "context": "vim_mode == normal && !menu",
     "bindings": {
       "space space": "file_finder::Toggle",
-      "space E": "project_panel::Toggle",
-      "space e": "workspace::ToggleRightDock",
+      "space e": "project_panel::Toggle",
+      "space E": "workspace::ToggleRightDock",
       "space f n": "workspace::NewFile",
       "space f p": "projects::OpenRecent",
       "space s g": "workspace::NewSearch",

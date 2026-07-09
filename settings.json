@@ -180,17 +180,17 @@
       {
         "token_type": "operator",
         "token_modifiers": ["controlFlow"],
-        "foreground_color": "#FF974Dff",
+        "foreground_color": "#FF974DFF",
       },
       {
         "token_type": "struct",
         "token_modifiers": ["library", "defaultLibrary"],
-        "foreground_color": "#FF5A58ff",
+        "foreground_color": "#FF5A58FF",
       },
       {
         "token_type": "typeAlias",
         "token_modifiers": ["library"],
-        "foreground_color": "#FF5A58ff",
+        "foreground_color": "#FF5A58FF",
       },
       {
         "token_type": "variable",
@@ -207,8 +207,12 @@
         "style": ["type.builtin"],
       },
       {
+        "token_type": "typeParameter",
+        "foreground_color": "#74AAB0FF",
+      },
+      {
         "token_type": "macro",
-        "foreground_color": "#FF5A58ff",
+        "foreground_color": "#FF5A58FF",
       },
       {
         "token_type": "selfTypeKeyword",
@@ -216,7 +220,7 @@
       },
       {
         "token_type": "property",
-        "foreground_color": "#E8E3DCff",
+        "foreground_color": "#E8E3DCFF",
       },
     ],
   },
