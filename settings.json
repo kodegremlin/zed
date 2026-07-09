@@ -15,7 +15,7 @@
   "status_bar": {
     "show_active_file": true,
   },
-  "scroll_beyond_last_line": "vertical_scroll_margin",
+  "scroll_beyond_last_line": "one_page",
   "preview_tabs": {
     "enable_preview_file_from_code_navigation": false,
     "enable_preview_from_multibuffer": false,

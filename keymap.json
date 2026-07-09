@@ -65,6 +65,12 @@
       "g h": "vim::StartOfLineDownward",
     },
   },
+  {
+    "context": "VimControl && !menu",
+    "bindings": {
+      "g \"": "vim::ToggleRegistersView",
+    },
+  },
   // File panel (netrw)
   {
     "context": "ProjectPanel && not_editing",
@@ -178,11 +184,15 @@
       "g r": "editor::Rename", // rename symbol
       "g a": "editor::ToggleCodeActions", // available code actions
       "g m": "editor::ToggleFold",
+
       "space d b": "editor::ToggleBreakpoint",
       "space c a": "editor::ToggleCodeActions",
       "space c r": "editor::Rename",
       "space c f": "editor::Format",
+
       "space x x": "diagnostics::Deploy", // open diagnostics list
+      "space c s": "task::Spawn",
+
       // git shortcuts
       "space g b": "git::Blame", // git blame inline
       "space g a": "git::Add",
