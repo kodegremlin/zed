@@ -138,8 +138,8 @@
     "bindings": {
       "space f f": "file_finder::Toggle",
       "space k": "editor::Hover",
-      // "space /": "text_finder::Toggle",
-      "space /": "pane::DeploySearch",
+      "space /": "text_finder::Toggle",
+      // "space /": "pane::DeploySearch",
     },
   },
   // Normal mode only
