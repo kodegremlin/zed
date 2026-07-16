@@ -103,6 +103,7 @@
   },
   "vertical_scroll_margin": 10.0,
   "terminal": {
+    "font_weight": 400.0,
     "button": true,
     "scrollbar": {
       "show": "never",
@@ -208,11 +209,11 @@
       },
       {
         "token_type": "typeParameter",
-        "foreground_color": "#74AAB0FF",
+        "foreground_color": "#688EE3FF",
       },
       {
         "token_type": "macro",
-        "foreground_color": "#FF5A58FF",
+        "foreground_color": "#A1A6FFff",
       },
       {
         "token_type": "selfTypeKeyword",

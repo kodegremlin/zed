@@ -124,6 +124,7 @@
     "context": "Terminal",
     "bindings": {
       "ctrl-w k": "terminal_panel::ToggleFocus",
+      "ctrl-w space": "terminal::ToggleViMode"
     },
   },
   // Insert mode
@@ -131,6 +132,7 @@
     "context": "Editor && vim_mode == insert && !GitCommit",
     "bindings": {
       "k j": "vim::NormalBefore",
+      "j k": "vim::NormalBefore"
     },
   },
   // Normal + Visual (VimControl covers both)
@@ -198,7 +200,9 @@
       "space g b": "git::Blame", // git blame inline
       "space g a": "git::Add",
       "space g s": "git::StageAll",
+      "space g shift-s": "git::ViewStagedChanges",
       "space g u": "git::UnstageAll",
+      "space g shift-u": "git::ViewUnstagedChanges",
       "space g c": "git::Commit",
     },
   },
