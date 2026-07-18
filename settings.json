@@ -206,7 +206,7 @@
       {
         "token_type": "derive",
         "token_modifiers": ["library", "defaultLibrary", "attribute"],
-        "style": ["enum"]
+        "style": ["lifetime"]
       },
       {
         "token_type": "decorator",

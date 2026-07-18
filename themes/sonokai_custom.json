@@ -194,9 +194,9 @@
                 "minimap.thumb.border": "#2C2F338F",
                 "syntax": {
                     "attribute": {
-                        "color": "#F0A737ff",
+                        "color": "#F2B557ff",
                         "font_style": null,
-                        "font_weight": null
+                        "font_weight": 500
                     },
                     "boolean": {
                         "color": "#B0A1FFff",
@@ -438,7 +438,7 @@
                     "lifetime": {
                         "color": "#F2B557ff",
                         "font_style": null,
-                        "font_weight": null
+                        "font_weight": 500
                     },
                     "variant": {
                         "color": "#6DA1ABff",
