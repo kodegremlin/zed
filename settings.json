@@ -196,7 +196,25 @@
       {
         "token_type": "variable",
         "token_modifiers": ["callable"],
-        "style": ["function"],
+        "foreground_color": "#6D9EDEff"
+      },
+      {
+        "token_type": "parameter",
+        "token_modifiers": ["callable"],
+        "foreground_color": "#6D9EDEff"
+      },
+      {
+        "token_type": "derive",
+        "token_modifiers": ["library", "defaultLibrary", "attribute"],
+        "style": ["enum"]
+      },
+      {
+        "token_type": "decorator",
+        "token_modifiers": ["library", "defaultLibrary", "attribute"],
+        "foreground_color": "#D1D4E0ff",
+        "background_color": "#8A90A624",
+        "font_style": null,
+        "font_weight":"bold"
       },
       {
         "token_type": "property",

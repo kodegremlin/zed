@@ -269,6 +269,16 @@
                         "font_style": null,
                         "font_weight": null
                     },
+                    "keyword.comment.warn": {
+                        "color": "#FF5A58ff",
+                        "font_style": null,
+                        "font_weight": null
+                    },
+                    "keyword.comment.warn.text": {
+                        "color": "#FF5A58ff",
+                        "font_style": null,
+                        "font_weight": null
+                    },
                     "label": {
                         "color": "#F0A737ff",
                         "font_style": null,
@@ -330,9 +340,10 @@
                         "font_weight": null
                     },
                     "punctuation.bracket": {
-                        "color": "#FF5B51ff",
+                        "foreground_color": "#D1D4E0ff",
+                        "background_color": "#8A90A624",
                         "font_style": null,
-                        "font_weight": null
+                        "font_weight": 500
                     },
                     "punctuation.delimiter": {
                         "color": "#E2E2E3ff",
@@ -350,7 +361,8 @@
                         "font_weight": null
                     },
                     "punctuation.special": {
-                        "color": "#FF5B51ff",
+                        "foreground_color": "#D1D4E0ff",
+                        "background_color": "#8A90A624",
                         "font_style": null,
                         "font_weight": null
                     },
