@@ -117,6 +117,8 @@
     "enabled": true,
   },
   "vim": {
+    "show_edit_predictions_in_normal_mode": false,
+    "highlight_on_yank_duration": 270,
     "cursor_shape": {
       "visual": "underline",
     },
@@ -127,7 +129,7 @@
   },
   "autosave": {
     "after_delay": {
-      "milliseconds": 5000,
+      "milliseconds": 10000,
     },
   },
   "disable_ai": true,
